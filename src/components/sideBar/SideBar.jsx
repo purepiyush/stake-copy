@@ -10,7 +10,7 @@ import myBets from './my-bets.svg'
 import soccer from './soccer.svg'
 import sports from './sports.svg'
 import startingSoon from './starting-soon.svg'
-import Tennis from './tennis.svg'
+import Tennis from './Tennis.svg'
 
 const SideBar = () => {
   return (
