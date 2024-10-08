@@ -51,7 +51,7 @@ const SideBar = () => {
 
                         <div className="fl-dd-header"><span>Top Sports</span></div>
                         <div className="fl-dd-element"><span><img src={soccer} alt="Sorry"/>Soccer</span></div>
-                        <div className="fl-dd-element"><span><img src={Tennis} alt="Sorry"/>Tennis</span></div>
+                        <div className="fl-dd-element"><span><img src={Tennis} alt="Sorr"/>Tennis</span></div>
                         <div className="fl-dd-element"><span><img src={basketball} alt="Sorry"/>Basketball</span></div>
                         <div className="fl-dd-element"><span><img src={iceHockey} alt="Sorry"/>Ice Hockey</span></div>
                         <div className="fl-seperator"></div>
