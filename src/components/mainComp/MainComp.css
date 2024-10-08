@@ -1,0 +1,94 @@
+
+/* REUSABLES */
+
+.display-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.display-flex-btw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-flex-even {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+i {
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.align-start {
+    display: flex;
+    align-items: flex-start;
+}
+
+.align-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.justify-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.justify-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro {
+    height: 100svh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1B2C39;
+    z-index: 9999999999;
+}
+
+.intro img {
+    height: 40px;
+}
+
+.intro div {
+    height: 40px;
+    overflow: hidden;
+}
+
+.odds-page {
+    flex-grow: 1;
+    background-color: #1B2D38;
+    font-size: 13px;
+    font-weight: 600;
+    width: 85vw;
+    margin-left: 17vw;
+    position: fixed;
+}

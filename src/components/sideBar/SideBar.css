@@ -1,0 +1,421 @@
+
+/* REUSABLES */
+
+.display-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.display-flex-btw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-flex-even {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+i {
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.align-start {
+    display: flex;
+    align-items: flex-start;
+}
+
+.align-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.justify-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.justify-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.intro {
+    height: 100svh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1B2C39;
+    z-index: 9999999999;
+}
+
+.intro img {
+    height: 40px;
+}
+
+.intro div {
+    height: 40px;
+    overflow: hidden;
+}
+
+/*DETAILED SIDE MENU*/
+
+.stake-side-bar {
+    width: 240px;
+    min-width: 240px;
+    max-width: 350px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 99999;
+}
+
+.stake-side-bar img {
+    height: 14px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.minimize {
+    display: none;
+    position: absolute;
+    left: -100%;
+}
+
+.fixed-left {
+    background-color: #0F202F;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.fl-head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    box-shadow: 0px 3px 7px #071824;
+}
+
+.fl-head span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 15px;
+    margin-left: 10px;
+    border-radius: 25px;
+    cursor: default;
+}
+
+.fl-head span:hover {
+    background-color: #071824;
+}
+
+.fl-image-container {
+    position: absolute;
+    right: -20px;
+    top: 12.5px;
+}
+
+.fl-head-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 40px;
+    background-color: #2F4553;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.fl-head-image:hover {
+    background-color: #415867;
+}
+
+.fl-head-tooltip {
+    display: none;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    color: #0F202F;
+    position: absolute;
+    top: 45px;
+    right: -52px;
+    z-index: 99999;
+}
+
+.fl-body {
+    height: calc(100% - 60px);
+    width: 92%;
+    margin-left: 8%;
+    overflow-y: auto;
+}
+
+.fl-body i {
+    margin-right: 8%;
+}
+
+.fl-body .fl-active i {
+    transform: rotate(-90deg);
+}
+
+.fl-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fl-casino {
+    margin-top: 30px;
+}
+
+.fl-main:hover span {
+    margin-left: 5px;
+    transition: all 0.1s linear;
+}
+
+.fl-active .fl-main:hover span {
+    margin-left: 0;
+}
+
+.fl-margin {
+    margin-top: 20px;
+}
+
+.fl-dropdown {
+    display: none;
+    margin-top: 10px;
+}
+
+.fl-active .fl-dropdown {
+    display: block;
+}
+
+.fl-dd-element {
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.fl-dd-element:is(:hover, .fl-dropdown-active) {
+    background-color: #071824;
+}
+
+.fl-dd-element span {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fl-dd-header {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.fl-seperator {
+    width: 92%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #22333d;
+    margin: 10px 0;
+}
+
+.fl-body::-webkit-scrollbar {
+    width: 6px;
+    position: relative; left: 20px;
+}
+
+.fl-body::-webkit-scrollbar-track {
+    background-color: #0F212E;
+}
+
+.fl-body::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #2E4552;
+}
+
+.live {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 0px 6px;
+    border-radius: 25px;
+    background-color: #4391E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0F202F;
+}
+
+.fl-blog {
+    margin-top: 10px;
+}
+
+.fl-extra {
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.fl-extra:hover {
+    background-color: #071824;
+}
+
+.fl-extra:hover .text {
+    margin-left: 10px;
+    transition: all 0.2s linear;
+}
+
+.fl-select-lang {
+    margin-bottom: 25px;
+    line-height: 14px;
+}
+
+.fl-select-lang img {
+    margin-right: 7px;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select span {
+    display: flex;
+    align-items: center;
+}
+
+/*MAIN BETTING SECTION*/
+
+/*FIXED HEADER*/
+
+.odds-page {
+    flex-grow: 1;
+    min-width: calc(100% - 590px);
+    background-color: #1B2D38;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.odds-page img {
+    height: 14px;
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Fixed Header */
+
+.fixed-top {
+    width: 100%;
+    height: 60px;
+    color: white;
+    box-shadow: 0px 3px 7px #071824;
+}
+
+.center-ft {
+    width: 92%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.stake-big-logo img {
+    height: 32px;
+    width: auto;
+    margin: 0;
+}
+
+.center-wallets {
+    width: 220px;
+    position: relative;
+}
+
+.ft-current-wallet {
+    height: 43px;
+    width: 120px;
+    padding: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #0F202F;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.ft-current-wallet:hover {
+    background-color: #071824;
+}
+
+.ft-current-wallet img {
+    margin-left: 5px;
+}
+
+.ft-current-wallet i {
+    margin-left: 5px;
+    transition: all 0.3s linear;
+}
+
+.ft-current-wallet .current-value {
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sw-text {
+    height: 45px;
+    width: 70px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #2b78ca;
+    transition: all 0.1s ease;
+    cursor: default;
+}
+
+.sw-text:hover {
+    background-color: #105FB5;
+}
+
+.ft-search img {
+    margin-right: 10px;
+}
+
+.user-profile-icon {
+    margin: 0 15px;
+}
